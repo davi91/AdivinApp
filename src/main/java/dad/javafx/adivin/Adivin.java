@@ -27,7 +27,7 @@ public class Adivin extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		// Generamos nuestro número aleatorio primero
-		randomNumber = (int)(Math.random() * 100 + 1);
+		generarNumero();
 		
 		descLabel = new Label("Introduce un número del 1 al 100");
 		
@@ -68,7 +68,7 @@ public class Adivin extends Application {
 				
 				// Preparamos para volver a jugar
 				intentos = 1;
-				randomNumber = (int)(Math.random() * 100 + 1);
+				generarNumero();
 				
 			} else {
 				
@@ -97,6 +97,8 @@ public class Adivin extends Application {
 			
 		}
 	}
+	
+	private void generarNumero() { randomNumber = (int)(Math.random() * 100 + 1); }
 
 	public static void main(String[] args) {	
 		launch(args);
