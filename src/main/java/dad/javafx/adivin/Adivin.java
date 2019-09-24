@@ -62,7 +62,7 @@ public class Adivin extends Application {
 				Alert alert = new Alert(AlertType.INFORMATION);
 				alert.setTitle("AdivinApp");
 				alert.setHeaderText("¡Has ganado!");
-				alert.setContentText(String.format("Solo has necesitado %d intentos.\nVuelve a jugar y hazlo mejor.", 
+				alert.setContentText(String.format("Solo has necesitado %d intentos.\n\nVuelve a jugar y hazlo mejor.", 
 													intentos));
 				alert.showAndWait();		
 				
@@ -76,7 +76,7 @@ public class Adivin extends Application {
 				alert.setTitle("AdivinApp");
 				alert.setHeaderText("¡Has fallado!");
 				
-				alert.setContentText(String.format("El número a acertar es %s a %d.\nVuelve a intentarlo.",
+				alert.setContentText(String.format("El número a acertar es %s a %d.\n\nVuelve a intentarlo.",
 													 (n > randomNumber) ? "menor" : "mayor",
 													 n));
 				
